@@ -1,0 +1,269 @@
+body{
+    font-family: ;
+}
+
+.header{
+    background-color: rgb(0, 54, 104);
+    padding: 15px 100px 10px 100px;
+    color: white;
+}
+
+
+.main{
+    background-color: rgb(116, 81, 235);
+    margin-bottom: 20px;
+}
+
+#plus:hover{
+    background-color: rgb(28, 60, 135);
+}
+
+#avenir{
+    margin-top: 30px;
+    width: 45%;
+    background-color: rgb(0, 54, 104);
+    margin-bottom: -5px;
+    padding-left: 15px;
+}
+
+#h1{
+    width: 50%;
+    background-color: rgb(0, 54, 104);
+    padding-left: 15px;
+}
+
+#p{
+    margin-top: 25px;
+    width: 50.5%;
+}
+
+figure{
+    text-align: center;
+}
+
+#caption{
+    width: 90%;
+}
+
+#fig{
+    color: rgb(0, 54, 104);
+}
+
+#inv{
+    width: 89%;
+    font-size: 18 px;
+    float: right;
+}
+
+#inv a{
+    color: rgb(43, 43, 43);
+}
+#inv a:hover{
+    text-decoration: none;
+}
+
+.block{
+    background-color: rgb(245, 245, 245);
+    margin-top: 5%;
+    padding: 5% 5% 5% 0;
+}
+
+#form{
+    width: 75%;
+    margin-left: 11%;
+    background-color: rgb(116, 81, 235);
+}
+
+.btn{
+    color: rgb(116, 81, 235);
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: rgb(222, 213, 250);
+    color: rgb(116, 81, 235);
+}
+
+.contact{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.oriente{
+    margin-top: 3%;
+}
+
+.oriente strong{
+    font-size: 24px;
+}
+
+.img-cont{
+    margin-left: 60px;
+}
+
+.block1{
+    display: block;
+}
+
+.vertical-line{
+    border-left: 1px solid rgb(231, 221, 221);
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aide{
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+select{
+    border: none;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    width: 250px
+}
+
+.img-lang{
+    margin-bottom: 40px;
+}
+
+#faq{
+    margin-top: 15px;
+}
+
+#icon{
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 8px;
+    margin-left: 5px;
+    margin-bottom: 45px;
+}
+
+/* .facebook:hover{
+    background: url("images/icons8-facebook-f-24\ \(1\).png");
+    background: rgb(24, 119, 242);
+} */
+
+.lient a{
+    color: rgb(90, 90, 90);
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+#open{
+    color: rgb(13, 101, 184);
+    margin-left: 12px;
+}
+
+.classrooms{
+    margin-left: 50px;
+}
+
+#aide{
+    color: rgb(13, 101, 184);
+    margin-left: 12px;
+    margin-top: 50px;
+}
+
+.pls{
+    margin-top: 30px;
+}
+
+.link-16{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.flc{
+    display: flex;
+    margin-top: 15px;
+}
+
+.tous a{
+   text-decoration: none;
+   color: rgb(61, 60, 60);
+}
+
+#line{
+    height: 35px;
+}
+
+.search{
+    margin-top: 7px;
+    width: 28px;
+}
+
+.btn-search{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 30px;
+}
+
+.net{
+    color: rgb(0, 54, 104);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.first{
+    width: 43.5%;
+    color: rgb(52, 80, 105);
+}
+
+.second{
+    width: 43%;
+    color: rgb(52, 80, 105);
+}
+
+.third{
+    width: 43%;
+    color: rgb(52, 80, 105);
+}
+
+@media only screen and (max-width: 950px) {
+    .main{
+        flex-direction: column-reverse;
+    }
+    #avenir{
+        width: 25%;
+    }
+    #h1{
+        width: 28%;
+    }
+    #p{
+        max-width: 31%;
+    }
+
+    .figure{
+        width: 100%;
+        margin: auto;
+    }
+
+    .oriente{
+        max-width: 50%;
+        margin-left: 40px;
+    }
+
+    .entrep{
+        margin-left: 50px;
+    }
+
+    .video{
+        width: 650px;
+        margin: auto;
+    }
+
+    .block{
+        flex-direction: column-reverse;
+    }
+    #inv{
+        max-width: 70%;
+    }
+
+}
+
+
+
