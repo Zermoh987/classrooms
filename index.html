@@ -10,43 +10,72 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row header">
-            <div class="col-lg-8">
-                Débutez votre alternance en ligne et quand vous voulez ! L’alternance, sans les galères.
-            </div>
-            <div class="col-lg-4">
-                <button type="button" class="btn text-light float-end" id="plus"><b>EN SAVOIR PLUS</b></button>
-            </div>
-        </div>
-
-        <div class="row tous">
-            <div class="col-lg-3">
-                <img src="images/openclassrooms.png" alt="" class="float-end" width="220px">
-            </div>
-            <div class="col-lg-6 flc">
-                <div class="dropdown">
-                    <a class="dropdown-toggle "  id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                     Formations
-                    </a>             
+        <header>
+            <div class="row header">
+                <div class="col-lg-8">
+                    Débutez votre alternance en ligne et quand vous voulez ! L’alternance, sans les galères.
                 </div>
-                <div class="vertical-line" id="line"></div>
-                <a href="#" class="">Pour les entreprises</a>
+                <div class="col-lg-4">
+                    <button type="button" class="btn text-light float-end" id="plus"><b>EN SAVOIR PLUS</b></button>
+                </div>
             </div>
-            <div class="col-lg-3 btn-search">
-                <a href="#"><img src="images/icons8-search-24.png" alt="" class="search"></a>
-                <button type="button" class="btn btn-outline-primary float-end"><b>SE CONNECTER</b></button>
+
+            <div class="row menu-site">
+                <div class="col-lg-3">
+                    <img src="images/openclassrooms.png" alt="" class="float-end" width="220px">
+                </div>
+                <div class="col-lg-6 flc">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle "  id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                        Formations
+                        </a>             
+                    </div>
+                    <div class="vertical-line" id="line"></div>
+                    <a href="#" class="">Pour les entreprises</a>
+                </div>
+                <div class="col-lg-3 btn-search">
+                    <a href="#"><img src="images/icons8-search-24.png" alt="" class="search"></a>
+                    <button type="button" class="btn btn-outline-primary float-end"><b>SE CONNECTER</b></button>
+                </div>
             </div>
-        </div>
-        
+        </header>
+
+        <header>
+            <div class="row menu-mobile">
+                <div class="col-sm-3 img-collapse">
+                    <div class=" align-items-center rounded collapsed" data-bs-toggle="collapse" 
+                        data-bs-target="#dashboard-collapse" aria-expanded="false" id="">
+                        <img src="images/téléchargement.png" class=" rounded float-star" alt="" width="24px" id="bars">
+                    </div>
+                    <div class="collapse collapse-horizontal" id="dashboard-collapse">
+                        <img src="images/openclassrooms.png" alt="" class="float-" width="200px" height="40px">
+                        <ul class=" list-unstyled card-body" style="width: 200px;">
+                            <li><a class="linkd-ark rounded" href="#">Formations</a></li>
+                            <li><a class="link-ark rounded" href="#">Formations diplômantes</a></li>
+                            <li><a class="link-ark rounded" href="#">Cours en libre accès</a></li>
+                            <li><a class="link-ark rounded" href="#">Pour les entreprises</a></li>
+                            <li><a class="link-ark rounded" href="#">Se connecter</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-8">
+                    <img src="images/openclassrooms.png" alt="" class="float-" width="200px" height="40px">
+                    <a href="#" class="float-end"><img src="images/icons8-search-24.png" alt="" class="search1"></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
         <div class="row main">
             <div class="col-lg-6 col-xxl-6 col-xl-6 col-sm-12 col-md-12" id="main1">
-                <img src="images/image_hp_banner.png" class="rounded float-end" alt="...">
+                <img src="images/image_hp_banner.png" class="rounded float-end" alt="..." id="img_main">
             </div>
             <div class="col-lg-6 col-xxl-6 col-xl-6 col-sm-12 col-md-12" id="main2">
                 <h1 class="text-light " id="avenir"><b>Votre avenir</b></h1>
                 <h1 class="text-light" id="h1"><b>commence ici</b></h1>
 
-                <p class=" text-light" id="p">Apprenez à apprendre. <br> Découvrez les compétences de demain.
+                <p class=" text-light" id="p">Apprenez à apprendre. <br> Découvrez les compétences de demain. <br>
                 Et prenez votre carrière en main.</p>
 
                 <button type="button" class="btn btn-light text-primary mp-30px" id="btn_plus"><b>EN SAVOIR PLUS</b></button>
@@ -59,7 +88,7 @@
                     <img src="images/diploma.svg" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption">
                         <p class="h5 text-center" id="fig"><b>Diplômes accrédités</b></p>
-                        <p class="lead text-center" id="caption">Le niveau de nos parcours certifiants est reconnu 
+                        <p class="text-center" id="caption">Le niveau de nos parcours certifiants est reconnu 
                          par l'État français</p>
                     </figcaption>
                 </figure>
@@ -70,7 +99,7 @@
                     <img src="images/mentorship.svg" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption">
                         <p class="h5 text-center" id="fig"><b>Mentorat</b></p>
-                        <p class="lead text-center" id="caption">Chaque semaine, un expert du métier visé suit vos progrès</p>
+                        <p class="text-center" id="caption">Chaque semaine, un expert du métier visé suit vos progrès</p>
                     </figcaption>
                 </figure>
             </div>
@@ -79,7 +108,7 @@
                     <img src="images/job.svg" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption">
                         <p class="h5 text-center" id="fig"><b>Garantie d'emploi</b></p>
-                        <p class="lead text-center" id="caption">Vous trouvez un emploi dans votre filière ou nous remboursons votre formation</p>
+                        <p class="text-center" id="caption">Vous trouvez un emploi dans votre filière ou nous remboursons votre formation</p>
                     </figcaption>
                   </figure>
             </div>
@@ -90,7 +119,7 @@
                 <div id="form">
                     <p class="h2 text-center text-light"><b>Des formations innovantes</b></p>
                 </div>
-                <p id="inv">
+                <p class="lead" id="inv">
                     Devenez qui vous voulez être avec OpenClassrooms. Choisissez votre carrière.
                     Suivez une formation <a href="#">constituée de projets professionnalisants</a> et de séances 
                     individuelles avec un mentor dédié chaque semaine. Obtenez un diplôme reconnu par l'État.
@@ -104,6 +133,9 @@
                      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
+            </div>
+            <div id="form-b">
+                <p class="h2 text-center text-light"><b>Des formations innovantes</b></p>
             </div>
         </div>
 
@@ -121,7 +153,7 @@
                             <div class="col-lg-5 col-xxl-5 col-xl-5 col-sm-6 col-md-6">
                                <img src="images/pierre-eric.jpg" class="d-block float-end" alt="..." width="350px">
                             </div>
-                            <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-6 col-md-6 first">
+                            <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-6 col-md-6 first" id="carousel">
                                 <p>&laquo;En un phrase, une formation Openclassrooms, c'est du challenge et
                                 du contenu de qualit&eacute;. Dans la Tech, ce n'est pas tant ce qu'on sait qui 
                                 compte, c'est ce quon est capable d'apprendre. Chez OpenClassrooms,
@@ -140,7 +172,7 @@
                         <div class="col-lg-5 col-xxl-5 col-xl-5 col-sm-6 col-md-6">
                             <img src="images/philippine.jpg" class="d-block float-end" alt="..." width="350px">
                         </div>
-                        <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-6 col-md-6 second">
+                        <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-6 col-md-6 second" id="carousel">
                             <p>&laquo;Ce qui m'a convaincue chez OpenClassrooms c'est que la formation
                                 est diplômante et surtout inscrite au RNCP, ce qui pour moi était une 
                                 garantie dans sa quatit&eacute;. On y acquiert des comp&eacute;tences recherch&eacute;es
@@ -159,7 +191,7 @@
                             <div class="col-lg-5 col-xxl-5 col-xl-5 col-sm-6 col-md-6">
                               <img src="images/calange.jpg" class="d-block float-end" alt="..." width="350px">
                             </div>
-                            <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-6 col-md-6 third" >
+                            <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-6 col-md-6 third" id="carousel">
                                 <p>La formation Tech Lead d'OpenClassrooms est r&eacute;ellement en accord
                                     avec le monde de l'entreprise.Il &eacute;tait aussi important que la formation
                                     soit au niveau Bac +5,car j'avait d&eacute;j&agrave; un Bac +3: ja ne suis pas d&eacute;&ccedil;u du 
@@ -183,10 +215,10 @@
         </div>
 
         <div class="row contact">
-            <div class="col-lg-3 col-xxl-3 col-xl-3 col-sm-3 col-md-3 img-cont">
-                <img src="images/contact.svg" class="rounded" alt="...">
+            <div class="col-lg-3 col-xxl-3 col-xl-3 col-sm-12 col-md-12 img-cont">
+                <img src="images/contact.svg" class="img-svg" alt="...">
             </div>
-            <div class="col-lg-8 col-xxl-8 col-xl-8 col-sm-8 col-md-8 oriente">
+            <div class="col-lg-8 col-xxl-8 col-xl-8 col-sm-12 col-md-12 oriente">
                 <strong>Nous sommes là pour vous orienter</strong>
                 <p>Notre équipe est à votre écoute pour vous aider à choisir la formation qu’il 
                     vous faut, du lundi au vendredi de 9h à 19h, heure en France métropolitaine.</p>
@@ -194,7 +226,7 @@
             </div>
         </div>
 
-        <div class="row lient">
+        <div class="row nav-pc">
             <hr>
             <div class="col-lg-3 col-xxl-3 col-xl-3 col-sm-5 col-md-5 classrooms">
                 <p id="open">OPENCLASSROOMS</p>
@@ -257,7 +289,92 @@
                 </div>
             </div>
         </div>
+        <div class=" nav-mobile">
+            <hr class="row" >
+            <div class= "link">
+                <button class=" align-items-center rounded collapsed" data-bs-toggle="collapse" 
+                data-bs-target="#dashboard-collapse" aria-expanded="false" id="link-mobile">
+                    OPENCLASSROOMS 
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a class="linkd-ark rounded" href="#">Active</a></li>
+                        <li><a class="link-ark rounded" href="#">Qui sommes-nous?</a></li>
+                        <li><a class="link-ark rounded" href="#">Alternance</a></li>
+                        <li><a class="link-ark rounded" href="#">Financements</a></li>
+                        <li><a class="link-ark rounded" href="#">Expérience de formation</a></li>
+                        <li><a class="link-ark rounded" href="#">Forum</a></li>
+                        <li><a class="link-ark rounded" href="#">blog</a></li>
+                        <li><a class="link-ark rounded" href="#">Presse</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="link">
+                <button class=" dropdown-toggle" type="link" data-bs-toggle="dropdown" aria-expanded="false" id="link-mobile">
+                    OPPORTUNITÉS
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="link" href="">Nous rejoindre</a></li>
+                  <li><a class="link" href="">Devenir mentor</a></li>
+                  <li><a class="link" href="">Deveni coach carrière</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="link">
+                <button class="sm md dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="link-mobile">
+                    AIDE
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="link" href=""><img src="images/mail_black_24dp.svg" alt="" id="mail_b"></a></li>
+                  <li><a class="link" href="">FAQ</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="link">
+                <button class="sm md dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="link-mobile">
+                    POUR LES ENTREPRISES
+                </button>
+                <ul class="dropdown-menu">
+                  <li>Former et recruter</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="link">
+                <button class="sm md dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="link-mobile">
+                    EN PLUS
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Boutique</a></li>
+                  <li><a href="">Condition générale d'utilisation</a></li>
+                  <li><a href="">Politique et Protection des données</a></li>
+                  <li><a href="">Cookies</a></li>
+                  <li><a href="">Accéssibilité</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="col-lg-12 col-xxl-12 col-xl-12 col-sm-12 col-md-12 lang">
+                <div class="img-lang">
+                    <img src="images/language_black_24dp.svg" alt="">
+                    <select class="lead">
+                        <option>Français</option>
+                        <option>Anglais</option>
+                    </select>
+                </div>
+                <div class="figure">
+                    <a href=""><img src="images/icons8-facebook-f-24.png" alt="" id="icon" class="facebook"></a>
+                    <a href=""><img src="images/icons8-twitter-24.png" alt="" id="icon" class="twitter"></a>
+                    <a href=""><img src="images/icons8-linkedin-2-32.png" alt="" id="icon" class="linkedin"></a>
+                    <a href=""><img src="images/icons8-instagram-24.png" alt="" id="icon" class="instag"></a>
+                    <a href=""><img src="images/icons8-youtube-24.png" alt="" id="icon" class="youtub"></a>
+                </div>
+                <div class="store">
+                    <a href=""><img src="images/app_store_badge_white_564x178px.png.png" alt="" width="160px" height="50px"></a>
+                </div>
+            </div>
+        </div>
     </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

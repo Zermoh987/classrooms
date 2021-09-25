@@ -1,6 +1,8 @@
 body{
     font-family: ;
 }
+ 
+/* menu pc */
 
 .header{
     background-color: rgb(0, 54, 104);
@@ -8,14 +10,43 @@ body{
     color: white;
 }
 
+#plus:hover{
+    background-color: rgb(28, 60, 135);
+}
+
+.search{
+    margin-top: 7px;
+    width: 28px;
+}
+
+.btn-search{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 30px;
+}
+
+.menu-site a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+ }
+
+ /* menu mobile */
+
+.menu-mobile{
+    padding: 10px;
+    display: inline-flex;
+}
+
+.search1{
+    margin-top: 7px;
+}
+
+/* contenu main */
 
 .main{
     background-color: rgb(116, 81, 235);
     margin-bottom: 20px;
-}
-
-#plus:hover{
-    background-color: rgb(28, 60, 135);
 }
 
 #avenir{
@@ -51,7 +82,7 @@ figure{
 
 #inv{
     width: 89%;
-    font-size: 18 px;
+    font-size: 18px;
     float: right;
 }
 
@@ -63,15 +94,22 @@ figure{
 }
 
 .block{
-    background-color: rgb(245, 245, 245);
-    margin-top: 5%;
     padding: 5% 5% 5% 0;
+    margin-top: 5%;
+    background-color: rgba(245, 245, 245, 0.781);
 }
 
 #form{
     width: 75%;
     margin-left: 11%;
     background-color: rgb(116, 81, 235);
+}
+
+#form-b{
+    width: 70%;
+    margin: 8% 0 5% 2.25%;
+    background-color: rgb(116, 81, 235);
+    display: none;
 }
 
 .btn{
@@ -97,7 +135,7 @@ figure{
     font-size: 24px;
 }
 
-.img-cont{
+.img-svg{
     margin-left: 60px;
 }
 
@@ -144,7 +182,7 @@ select{
     background: rgb(24, 119, 242);
 } */
 
-.lient a{
+.nav-pc a{
     color: rgb(90, 90, 90);
 }
 
@@ -181,25 +219,8 @@ hr{
     margin-top: 15px;
 }
 
-.tous a{
-   text-decoration: none;
-   color: rgb(61, 60, 60);
-}
-
 #line{
     height: 35px;
-}
-
-.search{
-    margin-top: 7px;
-    width: 28px;
-}
-
-.btn-search{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding-right: 8%;
-    padding-left: 30px;
 }
 
 .net{
@@ -223,18 +244,42 @@ hr{
     color: rgb(52, 80, 105);
 }
 
+.nav-mobile{
+    margin-top: 70px;
+}
+#link-mobile{
+    border: none;
+    background-color: white;
+    color: rgb(36, 87, 131);
+    font-size: 14px;
+}
+.link{
+    color: rgb(39, 38, 38);
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 950px) {
     .main{
         flex-direction: column-reverse;
     }
+    #img_main{
+        flex-direction: row;
+        margin-inline-end: 30%;
+        width: 55%;
+    }
+    #main2{
+        flex-direction: row;
+        margin-inline-start: 20%;
+        margin-bottom: 5%;
+    }
     #avenir{
-        width: 25%;
+        max-width: 40%;
     }
     #h1{
-        width: 28%;
+        max-width: 45%;
     }
     #p{
-        max-width: 31%;
+        width: 100%;
     }
 
     .figure{
@@ -259,10 +304,72 @@ hr{
     .block{
         flex-direction: column-reverse;
     }
-    #inv{
-        max-width: 70%;
+    #form{
+        display: none;
+    }
+    #form-b{
+        display: block;
     }
 
+    #inv{
+        float: left;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    #carousel{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .d-block{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .img-svg{
+        width: 40%;
+        margin: 0;
+    }
+    .img-cont{
+        width: 100%;
+        text-align: center;
+    }
+    .oriente{
+        max-width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    .nav-pc{
+        display: none;
+    }
+    .menu-site{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .figure-img{
+        width: 35%;
+    }
+    .figure-caption{
+        font-size: 14px;
+    }
+    #niv{
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 568px){
+    .nav-mobile{
+        display: none;
+    }
+    .menu-mobile{
+        display: none;
+    }
 }
 
 
