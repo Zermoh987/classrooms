@@ -51,21 +51,20 @@ body{
 
 #avenir{
     margin-top: 30px;
-    width: 45%;
+    max-width: 50%;
     background-color: rgb(0, 54, 104);
     margin-bottom: -5px;
     padding-left: 15px;
 }
 
 #h1{
-    width: 50%;
+    max-width: 55%;
     background-color: rgb(0, 54, 104);
     padding-left: 15px;
 }
 
 #p{
     margin-top: 25px;
-    width: 50.5%;
 }
 
 figure{
@@ -369,6 +368,28 @@ hr{
     }
     .menu-mobile{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    #img_main{
+        flex-direction: row;
+        margin-inline-end: 10%;
+        width: 75%;
+    }
+    #main2{
+        margin-inline-start: 10%;
+        margin-bottom: 5%;
+    }
+    #avenir{
+        max-width: 55%;
+    }
+    #h1{
+        max-width: 60%;
+    }
+    #p{
+        width: 100%;
+        font-size: 14px;
     }
 }
 
