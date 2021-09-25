@@ -393,5 +393,27 @@ hr{
     }
 }
 
+@media only screen and (max-width: 320px){
+    #img_main{
+        flex-direction: row;
+        margin-inline-end: 10%;
+        width: 75%;
+    }
+    #main2{
+        margin-inline-start: 10%;
+        margin-bottom: 5%;
+    }
+    #avenir{
+        max-width: 60%;
+    }
+    #h1{
+        max-width: 65%;
+    }
+    #p{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
 
 
